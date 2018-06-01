@@ -1,0 +1,190 @@
+body {
+  background: #f0f0f0;
+}
+.app {
+  min-height: 100vh;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header {
+  font-family: "Rancho";
+  background: url(../images/header-bg.png);
+  height: calc(100vh + 50px);
+  background-size: cover;
+  background-attachment: fixed; 
+  position: relative;
+  z-index: 500;
+  width: 100%;
+  transition: all .15s ease;
+}
+
+.header::before {
+  content: "";
+  background: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .2;
+  transition: all .25s ease-out;
+}
+
+.header #header-logo {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translateX(-50%);
+  max-width: 80%;
+  max-height: 80%;
+  transition: all .25s ease-out;
+}
+
+.header #header-divider {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.header #header-divider .header-divider-svg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.svg-divider {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.countdown-wrap {
+  min-height: 300px;
+  background: #eed6de;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem 0.5rem;
+}
+.judul-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.judul-section .icon {
+  font-size: 4rem;
+  margin-left: 1rem;
+}
+.judul-section .tulisan .atas {
+  font-size: 2.5rem;
+  font-family: "Kitten";
+}
+.judul-section .tulisan .bawah {
+  font-size: 1.75rem;
+  margin-top: -1rem;
+  font-family: "Caveat Brush";
+}
+.judul-section .kanan {
+  text-align: right;
+}
+/* FONT */
+.font-kitten {
+  font-family: "Kitten";
+  font-feature-settings: "liga" 1, "smcp" 1;
+}
+.font-kitten-ding {
+  font-family: "Kitten Dingcats";
+  font-feature-settings: "liga" 1, "smcp" 1;
+}
+.font-rancho {
+  font-family: "Rancho";
+}
+.font-caveat-brush {
+  font-family: "Caveat Brush";
+}
+.text-bold {
+  font-weight: bold;
+}
+/* Text Color */
+.text-pink {
+  color: #f86191;
+}
+.text-hitam {
+  color: #676767;
+}
+.text-coklat {
+  color: coral;
+}
+
+/* Countdown */
+.countdown-item {
+  text-align: center;
+  background: #f86191;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: #eed6de;
+  font-size: 2rem;
+  font-family: "Caveat Brush";
+  box-shadow: 0 5px 0 #e1618a;
+}
+
+.countdown-item .angka {
+  font-size: 4rem;
+}
+
+.countdown-item .keterangan {
+  color: #fea4c1;
+  font-family: "Kitten";
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+  .mb-mobile {
+    margin-bottom: 2rem !important;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .header #header-logo {
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%) translateX(0);
+    max-width: 80%;
+    max-height: 100%;
+    left: auto;
+  }
+  .header::before {
+    opacity: 0;
+  }
+  .countdown-wrap .container {
+    max-width: 720px !important;
+  }
+  .countdown-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}

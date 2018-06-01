@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Caveat Brush'), local('CaveatBrush-Regular'), url('../fonts/caveat-brush-v3-latin-regular.woff2') format('woff2'), 
+  url('../fonts/caveat-brush-v3-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Rancho';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rancho Regular'), local('Rancho-Regular'), url('../fonts/rancho-v8-latin-regular.woff2') format('woff2'),
+  url('../fonts/rancho-v8-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Kitten';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kitten'), url('../fonts/kitten/Kitten-trial.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kitten Dingcats';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kitten'), url('../fonts/kitten/Kitten-Dingcats-trial.ttf') format('truetype');
+}
