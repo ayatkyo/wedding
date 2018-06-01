@@ -1,5 +1,9 @@
 body {
   background: #f0f0f0;
+  font-size: 14px;
+}
+.bg-white {
+  background: #f0f0f0;
 }
 .app {
   min-height: 100vh;
@@ -12,14 +16,10 @@ body {
 
 .header {
   font-family: "Rancho";
-  background: url(../images/header-bg.png);
   height: calc(100vh + 50px);
-  background-size: cover;
-  background-attachment: fixed; 
   position: relative;
-  z-index: 500;
   width: 100%;
-  transition: all .15s ease;
+  transition: all 0.15s ease;
 }
 
 .header::before {
@@ -30,8 +30,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: .2;
-  transition: all .25s ease-out;
+  opacity: 0.2;
+  transition: all 0.25s ease-out;
 }
 
 .header #header-logo {
@@ -41,7 +41,20 @@ body {
   transform: translateX(-50%);
   max-width: 80%;
   max-height: 80%;
-  transition: all .25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.header #background {
+  position: fixed;
+  background: url(../images/header-bg.png);
+  background-size: cover;
+  background-position-x: 35%;
+  width: 100%;
+  height: calc(100vh + 50px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.15s ease;
 }
 
 .header #header-divider {
@@ -154,16 +167,14 @@ body {
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .header #header-logo {
     right: 5%;
     top: 50%;
@@ -185,6 +196,5 @@ body {
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-
+@media (min-width: 1200px) {
 }
