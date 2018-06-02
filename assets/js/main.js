@@ -1,22 +1,21 @@
-function parallaxInit() {
-    var $window = $(window);
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    $('[data-type="background"]').each(function () {
-        var $backgroundObj = $(this);
-        var speed = ($backgroundObj.data('speed') || 0);
-        var posisiY;
-
-        $window.on('scroll resize', function () {
-            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            posisiY = - (scrollTop / speed);
-            $backgroundObj.css({ transform: 'translateY(' + posisiY + 'px)' });
-        });
-    });
-
-    $window.trigger('scroll');
-};
-
 var app = {
+    initParallax: function() {
+        let $window = $(window);
+        let winScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        $('[data-type="background"]').each(function () {
+            let $bg = $(this);
+            let speed = ($bg.data('speed') || 0);
+            let posisiY;
+
+            $window.on('scroll resize', function () {
+                winScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                posisiY = - (winScrollTop / speed);
+                $bg.css({ transform: 'translateY(' + posisiY + 'px)' });
+            });
+        });
+
+        $window.trigger('scroll');
+    },
     makeCountDown: function (tanggal) {
         //  Inisialisasi
         let cdHari = document.getElementById('cdHari'),
@@ -63,7 +62,7 @@ var app = {
         //  Ganti countdown dengan kata kata
     },
     init: function () {
-        parallaxInit();
+        this.initParallax();
 
         //  Buat hitung mundur
         this.makeCountDown('27-06-2018');

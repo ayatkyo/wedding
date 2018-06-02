@@ -46,7 +46,6 @@ body {
 
 .header #background {
   position: fixed;
-  background: url(../images/header-bg.png);
   background-size: cover;
   background-position-x: 35%;
   width: 100%;
@@ -87,13 +86,20 @@ body {
   position: relative;
   padding: 2rem 0.5rem;
 }
+
+/* Section */
 .judul-section {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .judul-section .icon {
-  font-size: 4rem;
+  font-size: 4.5rem;
+}
+.judul-section.icon-kanan .icon {
+  margin-right: 1rem;
+}
+.judul-section.icon-kiri .icon {
   margin-left: 1rem;
 }
 .judul-section .tulisan .atas {
@@ -104,6 +110,13 @@ body {
   font-size: 1.75rem;
   margin-top: -1rem;
   font-family: "Caveat Brush";
+}
+.judul-section .kiri {
+  text-align: left;
+}
+.judul-section.tengah {
+  /* text-align: center; */
+  justify-content: center;
 }
 .judul-section .kanan {
   text-align: right;
@@ -156,6 +169,35 @@ body {
 .countdown-item .keterangan {
   color: #fea4c1;
   font-family: "Kitten";
+}
+
+/* Footer */
+footer {
+  height: 100px;
+  background: #676767;
+  color: #fea4c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .isi {
+  font-size: 1rem;
+}
+
+.wip-badge {
+  position: fixed;
+  font-family: "Kitten";
+  font-size: 1.25rem;
+  background: #f86191;
+  color: #eed6de;
+  z-index: 2815;
+  top: 2rem;
+  right: 0;
+  box-shadow: 0 0px 10px 5px rgba(0, 0, 0, 0.15);
+  text-align: right;
+  padding: .5rem 1rem;
+  border-bottom: 3px solid #e1618a;
 }
 
 /* MEDIA QUERY */
