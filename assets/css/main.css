@@ -160,20 +160,24 @@ body {
 }
 
 /* MEDIA QUERY */
+/* MD down */
 @media (max-width: 768px) {
   .mb-mobile {
     margin-bottom: 2rem !important;
   }
+  .countdown-item {
+    margin-bottom: 2rem !important;
+  }
 }
-/* Small devices (landscape phones, 576px and up) */
+/* SM up */
 @media (min-width: 576px) {
 }
 
-/* // Medium devices (tablets, 768px and up) */
+/* MD Up */
 @media (min-width: 768px) {
 }
 
-/* // Large devices (desktops, 992px and up) */
+/* LG Up */
 @media (min-width: 992px) {
   .header #header-logo {
     right: 5%;
@@ -195,6 +199,6 @@ body {
   }
 }
 
-/* // Extra large devices (large desktops, 1200px and up) */
+/* XL Up */
 @media (min-width: 1200px) {
 }
