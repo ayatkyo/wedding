@@ -1,9 +1,13 @@
 body {
   background: #f0f0f0;
   font-size: 14px;
+  color: #676767;
 }
-.bg-white {
-  background: #f0f0f0;
+.bg-2 {
+  background: #f7f7f7 !important;
+}
+.flex {
+  flex: 1;
 }
 .app {
   min-height: 100vh;
@@ -76,6 +80,13 @@ body {
   position: absolute;
   bottom: 0;
 }
+.svg-divider.top {
+  top: 0;
+  bottom: auto;
+}
+.svg-divider.flip {
+  transform: rotate(180deg);
+}
 .countdown-wrap {
   min-height: 300px;
   background: #eed6de;
@@ -95,12 +106,13 @@ body {
 }
 .judul-section .icon {
   font-size: 4.5rem;
+  margin-top: -0.5rem;
 }
 .judul-section.icon-kanan .icon {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 .judul-section.icon-kiri .icon {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 .judul-section .tulisan .atas {
   font-size: 2.5rem;
@@ -149,6 +161,37 @@ body {
 .text-coklat {
   color: coral;
 }
+.text {
+  font-size: 1rem;
+}
+
+.text-1-5rem {
+  font-size: 1.5rem
+}
+
+.section-divider {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.section-divider::after {
+  font-family: "FontAwesome";
+  content: '\f004';
+  position: absolute;
+  left: 50%;
+  color: #f86191;
+  transform: translateX(-50%);
+}
+.section-divider::before {
+  font-family: "FontAwesome";
+  content: '\f004';
+  position: absolute;
+  left: 50%;
+  color: #ffffff;
+  transform: translateX(-50%) scale(2);
+}
 
 /* Countdown */
 .countdown-item {
@@ -171,18 +214,126 @@ body {
   font-family: "Kitten";
 }
 
-/* Footer */
-footer {
-  height: 100px;
-  background: #676767;
-  color: #fea4c1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Penganten Item */
+.penganten-wrap {
+  position: relative;
+  padding-top: 5rem !important;
 }
 
-footer .isi {
+.penganten-wrap .svg-divider {
+  bottom: auto;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.penganten-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.penganten-item .penganten-photo {
+  /* width: 200px;
+  height: 200px;
+  border: 8px solid #f86191; */
+  /* align-self: center; */
+  /* border-radius: 100%;
+  background-size: cover;
+  background-position: center; */
+}
+
+.penganten-item .penganten-nama {
+  font-size: 2.5rem;
+  font-family: "Caveat Brush";
+  color: #f86191;
+}
+.penganten-subnama {
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: "Roboto";
+  text-align: center;
+}
+.penganten-isi {
   font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Lato";
+}
+.penganten-divider {
+  padding-top: 150px;
+  position: relative;
+}
+.penganten-divider::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: #f86191; */
+  border: 1px dashed #f86191;
+  width: 1px;
+  height: 50%;
+  bottom: 0;
+}
+/* Akad Nikah */
+.akadnikah-kutipan .isi {
+  font-size: 1.3rem;
+  letter-spacing: 0.01rem;
+  padding: 0 1.5rem;
+  max-width: 500px;
+}
+.akadnikah-acara {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #f86191;
+}
+
+.akadnikah-acara > .fa.fa-map-marker {
+  font-size: 2.25rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.akadnikah-acara .judul {
+  font-size: 1.75rem;
+  font-weight: bold;
+  font-family: "Kitten";
+}
+
+.akadnikah-acara .isi {
+  color: #676767;
+}
+
+.akadnikah-tanggal {
+  display: flex;
+  margin-top: 2rem;
+}
+.akadnikah-tanggal .tanggal {
+  text-align: right;
+}
+
+/* Footer */
+footer {
+  height: 180px;
+  color: #fea4c1;
+  position: relative;
+}
+footer .isi-wrap {
+  position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: url(../images/footer-bg-dark.png);
+    height: 100%;
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+footer .isi {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .wip-badge {
@@ -196,8 +347,34 @@ footer .isi {
   right: 0;
   box-shadow: 0 0px 10px 5px rgba(0, 0, 0, 0.15);
   text-align: right;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-bottom: 3px solid #e1618a;
+}
+
+/* Animasi Hati */
+.hati {
+  position: absolute;
+  border-radius: 100%;
+  bottom: 10px;
+  z-index: 1;
+}
+.hati:before,
+.hati:after {
+  position: absolute;
+  content: "";
+  left: 20px;
+  top: 0;
+  width: 20px;
+  height: 30px;
+  background: #fc2e5a;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.hati:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
 }
 
 /* MEDIA QUERY */
@@ -208,6 +385,41 @@ footer .isi {
   }
   .countdown-item {
     margin-bottom: 2rem !important;
+  }
+  .judul-section {
+    transform: scale(.8);
+  }
+  .judul-section .icon {
+    margin-top: 0;
+  }
+  .penganten-divider {
+    width: 100%;
+    text-align: center;
+    padding-top: 3rem;
+  }
+  .penganten-divider::after {
+    display: none;
+  }
+}
+/* SM down */
+@media (max-width: 576px) {
+  .akadnikah-kutipan .isi {
+    font-size: .9rem;
+    padding: 0 0.5rem;
+    max-width: 332px;
+  }
+  .akadnikah-acara {
+    margin-bottom: 0;
+  }
+  .akadnikah-acara .judul {
+    font-size: 1.25rem;
+  }
+  .akadnikah-acara .isi {
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+  .akadnikah-acara > .fa.fa-map-marker {
+    font-size: 1.25rem;
   }
 }
 /* SM up */

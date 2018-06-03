@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <div class="wip-badge">Work in Progress</div>
+  <div class="wip-badge d-none">Work in Progress</div>
   <div class="app">
     <div class="header">
       <div id="background" data-type="background" data-speed="5" style="background-image: url(./assets/images/header-bg.png);"></div>
@@ -49,6 +49,7 @@
         </svg>
       </div>
     </div>
+    <!-- Count Down -->
     <section class="countdown-wrap">
       <div class="container">
         <div class="row">
@@ -78,8 +79,12 @@
           </div>
         </div>
       </div>
-      <!-- <svg class="svg-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 51" preserveAspectRatio="none slice">
-        <path fill="#f0f0f0" d="M1000,5.669V51H0V5.669c11.493,0,22.985,3.41,31.724,10.228l19.87,15.547
+    </section>
+    <!-- END Count Down -->
+    <!-- Profil Penganten -->
+    <section class="bg-white penganten-wrap py-5 text-hitam text">
+      <svg class="svg-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 51" preserveAspectRatio="none slice">
+        <path fill="#eed6de" d="M1000,5.669V51H0V5.669c11.493,0,22.985,3.41,31.724,10.228l19.87,15.547
           c17.445,13.648,46.009,13.648,63.451,0l19.89-15.547c17.445-13.638,45.992-13.638,63.434,0l19.903,15.547
           c17.432,13.648,45.995,13.648,63.438,0l19.887-15.547c17.461-13.638,46.012-13.638,63.454,0l19.887,15.559
           c17.464,13.638,46.01,13.638,63.453,0l19.89-15.559c17.446-13.638,45.989-13.638,63.453,0l19.872,15.547
@@ -87,27 +92,182 @@
           c17.46,13.648,46.008,13.648,63.451,0l19.889-15.547c17.444-13.638,45.99-13.638,63.438,0l19.89,15.547
           c17.444,13.648,45.991,13.648,63.451,0l19.887-15.547C976.997,9.073,988.504,5.657,1000,5.669z" 
         ></path>
-      </svg> -->
-    </section>
-    <section class="bg-white akadnikah-wrap">
+      </svg>
       <div class="container">
+        <div class="row">
+          <div class="col-md d-flex">
+            <div class="penganten-item align-items-center align-items-md-end">
+              <div class="penganten-photo">
+                <img src="./assets/images/ayat.png" alt="" class="img-fluid">
+              </div>
+              <div class="penganten-nama text-center text-lg-right">Hidayatullah, S.Kom</div>
+              <div class="penganten-subnama">
+                <span class="d-none d-md-inline">Anak kedua dari Bapak Yurdani &amp; Ibu Siti Rahmah</span>
+                <span class="d-md-none">Anak kedua dari<br>Bapak Yurdani &amp; Ibu Siti Rahmah</span>
+              </div>
+              <div class="penganten-isi text-center text-md-right">Kita lahir di bulan yang sama, di tahun yang sama, bersekolah di SMK yang sama dan sekarang saatnya untuk kita hidup bersama.</div>
+              <div class="flex"></div>
+              <a href="https://www.facebook.com/ayat.kyo" class="btn btn-primary mt-3 text-bold text-uppercase w-100" target="_blank">
+                <i class="fa fa-facebook mr-3"></i>
+                <span>Lihat Profil Facebook</span>
+              </a>
+            </div>
+          </div>
+          <div class="penganten-divider">
+            <img src="./assets/images/penganten-divider.png" class="img-fluid">
+          </div>
+          <div class="col-md d-flex">
+            <div class="penganten-item align-items-center align-items-md-start">
+              <div class="penganten-photo">
+                <img src="./assets/images/mawad.png" alt="" class="img-fluid">
+              </div>
+              <div class="penganten-nama text-center text-lg-left">Siti Mawaddah, A.Md</div>
+              <div class="penganten-subnama">
+                <span class="d-none d-md-inline">Anak kedua dari Bapak Fajeriansyah (Alm) &amp; Ibu Hj. Samawiah</span>
+                <div class="d-md-none">Anak kedua dari<br>Bapak Fajeriansyah (Alm) &amp; Ibu Hj. Samawiah</div>
+              </div>
+              <div class="penganten-isi text-center text-lg-left">Kita berjalan diatas jalur cinta, di ujung jalan kita akan bertemu kembali.</div>
+              <div class="flex"></div>
+              <a href="https://www.facebook.com/mawad.28.MM1" class="btn btn-primary mt-3 text-bold text-uppercase w-100" target="_blank">
+                <i class="fa fa-facebook mr-3"></i>
+                <span>Lihat Profil Facebook</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Profile Penganten -->
+    <div class="section-divider"></div>
+    <!-- Akad Nikah -->
+    <section class="bg-white akadnikah-wrap pt-5 pb-3">
+      <div class="container d-flex flex-column align-items-center">
         <div class="judul-section tengah icon-kanan">
           <div class="icon text-pink">
             <i class="fa fa-heart"></i>
           </div>
           <div class="tulisan">
             <div class="atas text-pink">Akad Nikah</div>
-            <div class="bawah text-hitam text-bold">11 April 2018</div>
+            <div class="bawah text-hitam text-bold">Rabu, 11 April 2018</div>
           </div>
         </div>
-        <div class="isi text-center font-caveat-brush">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo saepe nihil quasi odit consequuntur mollitia impedit, harum accusamus sapiente ipsa natus voluptate facere. Perferendis ab numquam ipsam exercitationem quisquam nam repellat animi dolore sequi magnam earum, blanditiis mollitia nemo quis molestias. Doloribus quae sapiente omnis iste qui sunt tempore ratione.
+        <div class="akadnikah-tanggal d-none">
+          <div class="hari">Rabu,</div>
+          <div class="tanggal">
+            <div>11 April 2018</div>
+            <div>24 Rajab 1439 H</div>
+          </div>
+        </div>
+        <div class="akadnikah-acara">
+          <div class="text-right">
+            <div class="judul">Ijab Kabul</div>
+            <div class="isi">KUA Amuntai Tengah</div>
+          </div>
+          <i class="fa fa-map-marker"></i>
+          <div>
+            <div class="judul">Bahantaran</div>
+            <div class="isi">Rumah Mempelai Wanita</div>
+          </div>
+        </div>
+        <div class="akadnikah-kutipan text-center">
+          <div class="isi text-hitam text-center font-caveat-brush mt-3">
+            Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.
+          </div>
+          <div class="font-rancho text-bold mt-3" style="font-size: 1.2rem;">( Q.S. Ar - Ruum : 21 )</div>
+            
         </div>
       </div>
     </section>
+    <!-- END Akad Nikah -->
+    <div class="section-divider"></div>
+    <section class="bg-2 akadnikah-wrap py-5">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="judul-section tengah icon-kanan">
+          <div class="icon text-pink">
+            <i class="fa fa-calendar"></i>
+          </div>
+          <div class="tulisan">
+            <div class="atas text-pink">Acara Resepsi</div>
+            <div class="bawah text-hitam text-bold">27 Juni 2018</div>
+          </div>
+        </div>
+        <div class="akadnikah-acara">
+          <div class="text-right">
+            <div class="judul">Ijab Kabul</div>
+            <div class="isi">KUA Amuntai Tengah</div>
+          </div>
+          <i class="fa fa-map-marker"></i>
+          <div>
+            <div class="judul">Bahantaran</div>
+            <div class="isi">Rumah Mempelai Wanita</div>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="isi text-hitam text-center font-caveat-brush mt-3" 
+            style="font-size: 1.3rem;letter-spacing: 0.01rem;padding: 0 1.5rem;max-width: 500px;">
+            Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.
+          </div>
+          <div class="font-rancho text-bold mt-3" style="font-size: 1.2rem;">( Q.S. Ar - Ruum : 21 )</div>
+            
+        </div>
+      </div>
+    </section>
+    <div class="section-divider bg-2"></div>
+    <!-- Peta Lokasi -->
+    <section class="bg-white petalokasi-wrap py-5">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="judul-section tengah icon-kanan">
+          <div class="icon text-pink">
+            <i class="fa fa-map-signs"></i>
+          </div>
+          <div class="tulisan">
+            <div class="atas text-pink">Peta Lokasi</div>
+            <div class="bawah text-hitam text-bold">Acara Resepsi</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Peta Lokasi -->
+    <div class="section-divider"></div>
+    <!-- Galeri Foto -->
+    <section class="bg-white petalokasi-wrap py-5">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="judul-section tengah icon-kanan">
+          <div class="icon text-pink">
+            <i class="fa fa-image"></i>
+          </div>
+          <div class="tulisan">
+            <div class="atas text-pink">Galeri Foto</div>
+            <div class="bawah text-hitam text-bold">Momen Terbaik</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Galeri Foto -->
     <footer>
-      <div class="isi">
-        Made with <i class="fa fa-heart text-pink"></i> by <span class="text-pink text-bold">Ayat & Mawad.</span>
+      <svg class="svg-divider top flip" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 51" preserveAspectRatio="none slice">
+        <path fill="rgba(0,0,0,0.05)" d="M1000,5.669V51H0V5.669c11.493,0,22.985,3.41,31.724,10.228l19.87,15.547
+          c17.445,13.648,46.009,13.648,63.451,0l19.89-15.547c17.445-13.638,45.992-13.638,63.434,0l19.903,15.547
+          c17.432,13.648,45.995,13.648,63.438,0l19.887-15.547c17.461-13.638,46.012-13.638,63.454,0l19.887,15.559
+          c17.464,13.638,46.01,13.638,63.453,0l19.89-15.559c17.446-13.638,45.989-13.638,63.453,0l19.872,15.547
+          c17.441,13.648,46.006,13.648,63.45,0l19.889-15.547c17.443-13.638,45.993-13.638,63.452,0l19.872,15.547
+          c17.46,13.648,46.008,13.648,63.451,0l19.889-15.547c17.444-13.638,45.99-13.638,63.438,0l19.89,15.547
+          c17.444,13.648,45.991,13.648,63.451,0l19.887-15.547C976.997,9.073,988.504,5.657,1000,5.669z" 
+          style="transform: translateY(-3px)"
+        ></path>
+        <path fill="#ffffff" d="M1000,5.669V51H0V5.669c11.493,0,22.985,3.41,31.724,10.228l19.87,15.547
+          c17.445,13.648,46.009,13.648,63.451,0l19.89-15.547c17.445-13.638,45.992-13.638,63.434,0l19.903,15.547
+          c17.432,13.648,45.995,13.648,63.438,0l19.887-15.547c17.461-13.638,46.012-13.638,63.454,0l19.887,15.559
+          c17.464,13.638,46.01,13.638,63.453,0l19.89-15.559c17.446-13.638,45.989-13.638,63.453,0l19.872,15.547
+          c17.441,13.648,46.006,13.648,63.45,0l19.889-15.547c17.443-13.638,45.993-13.638,63.452,0l19.872,15.547
+          c17.46,13.648,46.008,13.648,63.451,0l19.889-15.547c17.444-13.638,45.99-13.638,63.438,0l19.89,15.547
+          c17.444,13.648,45.991,13.648,63.451,0l19.887-15.547C976.997,9.073,988.504,5.657,1000,5.669z" 
+        ></path>
+      </svg>
+      <div class="isi-wrap">
+        <div class="isi text-white">
+          Made with <i class="fa fa-heart text-pink"></i> by<br><span class="text-pink font-kitten text-bold text-1-5rem">Ayat & Mawad.</span><br>
+        </div>
       </div>
     </footer>
   </div>
