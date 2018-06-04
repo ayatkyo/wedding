@@ -214,23 +214,13 @@
       </div>
     </section>
     <!-- END Acara Resepsi -->
-    <div class="section-divider bg-2"></div>
+    <div class="section-divider bg-2" style="z-index: 2"></div>
     <!-- Peta Lokasi -->
     <section class="bg-white petalokasi-wrap py-5">
-      <div class="container d-flex flex-column align-items-center">
-        <div class="judul-section kanan icon-kanan">
-          <div class="tulisan">
-            <div class="atas text-pink">Peta Lokasi</div>
-            <div class="bawah text-hitam text-bold">Acara Resepsi</div>
-          </div>
-          <div class="icon text-pink">
-            <i class="fa fa-map-signs"></i>
-          </div>
-        </div>
-      </div>
+      <div id="petalokasi"></div>
     </section>
     <!-- END Peta Lokasi -->
-    <div class="section-divider"></div>
+    <div class="section-divider" style="background: none;margin-top: -10px;z-index: 2;"></div>
     <!-- Galeri Foto -->
     <section class="bg-white petalokasi-wrap py-5">
       <div class="container d-flex flex-column align-items-center">
@@ -268,7 +258,7 @@
       </svg>
       <div class="isi-wrap">
         <div class="isi text-white">
-          Made with <i class="fa fa-heart text-pink"></i> by<br><span class="text-pink font-kitten text-bold text-1-5rem">Ayat & Mawad.</span><br>
+          Made with <i class="fa fa-heart text-pink"></i> by<br><span class="text-pink font-kitten text-bold text-1-5rem">Ayat &amp; Mawad.</span><br>
         </div>
       </div>
     </footer>
@@ -280,6 +270,8 @@
   <script src="./libs/bootstrap/bootstrap.min.js"></script>
   <script src="./libs/moment/moment.min.js"></script>
   <script src="./libs/moment/id.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL_CyXzFWVA7U7cSsCFnAamkbJkmM5H8o"></script>
+  <script src="https://cdn.jsdelivr.net/npm/map-icons@3.0.3/dist/js/map-icons.min.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 

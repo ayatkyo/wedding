@@ -1,4 +1,4 @@
-var app = {
+window.app = {
     initParallax: function() {
         let $window = $(window);
         let winScrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -61,13 +61,63 @@ var app = {
     completeCountDown: function () {
         //  Ganti countdown dengan kata kata
     },
+    initMap: function () {
+        //  Buat Peta
+        this.map = new google.maps.Map(document.getElementById('petalokasi'), {
+            mapTypeId: google.maps.MapTypeId.HYBRID,
+            zoom: 16,
+            center: {
+                lat: -2.442686720458634, 
+                lng: 115.24281005552984
+            }
+        });
+
+        //  Buat marker
+        this.markerAyat = new Marker({
+            map: this.map,
+            position: { lat: -2.4429788, lng: 115.2400099 },
+            icon: {
+                path: MAP_PIN,
+                fillColor: '#f86191',
+                fillOpacity: 1,
+                strokeColor: '',
+                strokeWeight: 0
+            },
+            map_icon_label: '<div class="fa fa-heart mapmarker-icon"><div class="maplabel">Mempelai Pria</div></div>'
+        });
+        this.markerMawad = new Marker({
+            map: this.map,
+            position: { lat: -2.444385, lng: 115.244033 },
+            icon: {
+                path: MAP_PIN,
+                fillColor: '#f86191',
+                fillOpacity: 1,
+                strokeColor: '',
+                strokeWeight: 0
+            },
+            map_icon_label: '<div class="fa fa-heart mapmarker-icon"><div class="maplabel">Mempelai Wanita</div></div>'
+        });
+
+        //  Saat diclick
+        this.markerAyat.addListener('click', () => {
+            this.map.setZoom(20);
+            window.setTimeout(() => this.map.panTo(this.markerAyat.getPosition()), 1);
+        });
+        this.markerMawad.addListener('click', () => {
+            this.map.setZoom(20);
+            window.setTimeout(() => this.map.panTo(this.markerMawad.getPosition()), 1);
+        });
+    },
     init: function () {
         this.initParallax();
 
         //  Buat hitung mundur
         this.makeCountDown('27-06-2018');
+
+        //  Init Peta
+        this.initMap();
     },
 };
 
 //  Init App
-app.init();
+$(document).ready(e => app.init());

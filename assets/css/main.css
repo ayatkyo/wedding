@@ -322,6 +322,41 @@ body {
   text-align: right;
 }
 
+/* Peta Lokasi */
+.petalokasi-wrap {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.petalokasi-wrap #petalokasi {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  width: 100%;
+}
+.mapmarker-icon {
+  font-size: 1rem;
+  color: #ffffff;
+  position: relative;
+  transform: translateY(-100%) translateX(0);
+}
+.map-icon-label {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.maplabel {
+  position: absolute;
+  font-family: "Kitten";
+  color: #f86191;
+  font-weight: bold;
+  font-size: 1.25rem;
+  left: 200%;
+  top: -25%;
+  text-shadow:0px -3px 5px rgba(0, 0, 0, 0.5),0px 3px 5px rgba(0, 0, 0, 0.5),3px 0px 5px rgba(0, 0, 0, 0.5),-3px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
 /* Footer */
 footer {
   height: 180px;
