@@ -3,6 +3,9 @@ body {
   font-size: 14px;
   color: #676767;
 }
+section {
+  overflow: hidden;
+}
 .bg-2 {
   background: #f7f7f7 !important;
 }
@@ -552,6 +555,7 @@ body {
   height: 100vh;
   transition: all 0.25s ease-out;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #f3f3f3;
@@ -566,6 +570,16 @@ body {
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
+}
+.preloader-kata {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-family: "Caveat Brush";
+}
+.preloader-kata.atas {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1rem;
 }
 @keyframes pulse {
   from {

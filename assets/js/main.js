@@ -10,8 +10,8 @@ window.app = {
 
             $window.on('scroll resize', function () {
                 //  Cek Apakah dalam screen
-                let bpTop = bgParent.offset().top;
-                let bpHeight = bgParent.outerHeight();
+                let bpTop = bgParent.offset().top - 50;
+                let bpHeight = bgParent.outerHeight() + 50;
                 if (window.pageYOffset > (bpTop + bpHeight) || (window.pageYOffset + window.innerHeight) < bpTop) {
                     $bg.css({ visibility: 'hidden'});
                     return;
@@ -174,8 +174,20 @@ window.app = {
     },
 };
 
+//  Init AOS
+AOS.init({
+    easing: 'ease-out-back',
+    delay: 400,
+    duration: 600,
+    once: true,
+    startEvent: 'mulaiAnimasi'
+});
+
 //  Init App
 $(document).ready(e => app.init());
 
 //  Preloader
-$(window).on('load', e => $('.preloader').addClass('hide'));
+$(window).on('load', e => {
+    $('.preloader').addClass('hide');
+    document.dispatchEvent(new Event('mulaiAnimasi'));
+});

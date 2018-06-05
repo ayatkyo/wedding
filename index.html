@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/css/lightgallery.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.0/aos.css" />
   <link rel="stylesheet" href="./assets/css/fonts.css">
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
@@ -24,12 +25,16 @@
 <body>
   <div class="wip-badge">Work in Progress</div>
   <div class="preloader">
+    <div class="preloader-kata atas">Sedang Memuat</div>
     <i class="fa fa-heart preloader-indicator"></i>
+    <div class="preloader-kata">Mohon Tunggu</div>
   </div>
   <div class="app">
     <div class="header">
       <div id="background" data-type="background" data-speed="5" style="background-image: url(./assets/images/header-bg.png);"></div>
-      <img src="./assets/images/logo2.png" id="header-logo">
+      <img src="./assets/images/logo2.png" id="header-logo" 
+        data-aos="fade-up"
+        >
       <div id="header-divider">
         <svg class="header-divider-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 60" preserveAspectRatio="none slice">
           <path fill="#f86191" d="M1000,5.669V51H0V5.669c11.493,0,22.985,3.41,31.724,10.228l19.87,15.547
@@ -61,25 +66,33 @@
       <div class="container">
         <div class="row">
           <div class="col-6 col-md-3">
-            <div class="countdown-item">
+            <div class="countdown-item" 
+              data-aos="fade-up"
+              >
               <div class="angka" id="cdHari">28</div>
               <div class="keterangan">Hari</div>
             </div>
           </div>
           <div class="col-6 col-md-3">
-            <div class="countdown-item">
+            <div class="countdown-item"
+              data-aos="fade-up"
+              >
               <div class="angka" id="cdJam">15</div>
               <div class="keterangan">Jam</div>
             </div>
           </div>
           <div class="col-6 col-md-3">
-            <div class="countdown-item">
+            <div class="countdown-item"
+              data-aos="fade-down"
+              >
               <div class="angka" id="cdMenit">18</div>
               <div class="keterangan">Menit</div>
             </div>
           </div>
           <div class="col-6 col-md-3">
-            <div class="countdown-item">
+            <div class="countdown-item"
+              data-aos="fade-down"
+              >
               <div class="angka" id="cdDetik">11</div>
               <div class="keterangan">Detik</div>
             </div>
@@ -104,17 +117,33 @@
         <div class="row">
           <div class="col-md d-flex">
             <div class="penganten-item align-items-center align-items-md-end">
-              <div class="penganten-photo">
+              <div class="penganten-photo"
+                data-aos="fade-left"
+                data-aos-delay="600"
+                >
                 <img src="./assets/images/ayat.png" alt="" class="img-fluid">
               </div>
-              <div class="penganten-nama text-center text-lg-right">Hidayatullah, S.Kom</div>
-              <div class="penganten-subnama">
+              <div class="penganten-nama text-center text-lg-right"
+                data-aos="fade-up"
+                data-aos-delay="1000"
+                >Hidayatullah, S.Kom</div>
+              <div class="penganten-subnama"
+                data-aos="fade-up"
+                data-aos-delay="1000"
+                >
                 <span class="d-none d-md-inline">Anak kedua dari Bapak Yurdani &amp; Ibu Siti Rahmah</span>
                 <span class="d-md-none">Anak kedua dari<br>Bapak Yurdani &amp; Ibu Siti Rahmah</span>
               </div>
-              <div class="penganten-isi text-center text-md-right">Kita lahir di bulan yang sama, di tahun yang sama, bersekolah di SMK yang sama dan sekarang saatnya untuk kita hidup bersama.</div>
+              <div class="penganten-isi text-center text-md-right"
+                data-aos="fade-down"
+                data-aos-delay="1400"
+                >Kita lahir di bulan yang sama, di tahun yang sama, bersekolah di SMK yang sama dan sekarang saatnya untuk kita hidup bersama.</div>
               <div class="flex"></div>
-              <a href="https://www.facebook.com/ayat.kyo" class="btn btn-secondary mt-3 text-bold text-uppercase w-100" target="_blank">
+              <a href="https://www.facebook.com/ayat.kyo" 
+                class="btn btn-secondary mt-3 text-bold text-uppercase w-100" 
+                target="_blank"
+                data-aos="fade-down"
+                >
                 <i class="fa fa-facebook mr-3"></i>
                 <span>Lihat Profil Facebook</span>
               </a>
@@ -125,17 +154,29 @@
           </div>
           <div class="col-md d-flex">
             <div class="penganten-item align-items-center align-items-md-start">
-              <div class="penganten-photo">
+              <div class="penganten-photo"
+                data-aos="fade-right"
+                >
                 <img src="./assets/images/mawad.png" alt="" class="img-fluid">
               </div>
-              <div class="penganten-nama text-center text-lg-left">Siti Mawaddah, A.Md</div>
-              <div class="penganten-subnama">
+              <div class="penganten-nama text-center text-lg-left"
+                data-aos="fade-up"
+                >Siti Mawaddah, A.Md</div>
+              <div class="penganten-subnama"
+                data-aos="fade-up"
+                >
                 <span class="d-none d-md-inline">Anak kedua dari Bapak Fajeriansyah (Alm) &amp; Ibu Hj. Samawiah</span>
                 <div class="d-md-none">Anak kedua dari<br>Bapak Fajeriansyah (Alm) &amp; Ibu Hj. Samawiah</div>
               </div>
-              <div class="penganten-isi text-center text-lg-left">Kita berjalan diatas jalur cinta, di ujung jalan kita akan bertemu kembali.</div>
+              <div class="penganten-isi text-center text-lg-left"
+                data-aos="fade-down"
+                >Kita berjalan diatas jalur cinta, di ujung jalan kita akan bertemu kembali.</div>
               <div class="flex"></div>
-              <a href="https://www.facebook.com/mawad.28.MM1" class="btn btn-secondary mt-3 text-bold text-uppercase w-100" target="_blank">
+              <a href="https://www.facebook.com/mawad.28.MM1" 
+                class="btn btn-secondary mt-3 text-bold text-uppercase w-100"
+                target="_blank"
+                data-aos="fade-down"
+                >
                 <i class="fa fa-facebook mr-3"></i>
                 <span>Lihat Profil Facebook</span>
               </a>
@@ -166,22 +207,31 @@
           </div>
         </div>
         <div class="akadnikah-acara">
-          <div class="text-right">
+          <div class="text-right"
+            data-aos="fade-left"
+            >
             <div class="judul">Ijab Kabul</div>
             <div class="isi">KUA Amuntai Tengah</div>
           </div>
-          <i class="fa fa-map-marker"></i>
-          <div>
+          <i class="fa fa-map-marker" 
+            data-aos="fade-up"
+            ></i>
+          <div
+            data-aos="fade-right"
+            >
             <div class="judul">Bahantaran</div>
             <div class="isi">Rumah Mempelai Wanita</div>
           </div>
         </div>
         <div class="akadnikah-kutipan text-center">
-          <div class="isi text-hitam text-center font-caveat-brush mt-3">
+          <div class="isi text-hitam text-center font-caveat-brush mt-3" 
+            data-aos="fade-up"
+            >
             Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.
           </div>
-          <div class="font-rancho text-bold mt-3" style="font-size: 1.2rem;">( Q.S. Ar - Ruum : 21 )</div>
-            
+          <div class="font-rancho text-bold mt-3" style="font-size: 1.2rem;"
+            data-aos="fade-up"
+            >( Q.S. Ar - Ruum : 21 )</div>
         </div>
       </div>
     </section>
@@ -200,20 +250,30 @@
               <div class="bawah text-hitam text-bold">Lokasi dan Tanggal</div>
             </div>
           </div>
-          <div class="resepsi-judul-kata">Ya Allah, Sempurnakanlah kebahagiaan kami dengan menjadikan perkawinan kami ini sebagai ibadah kepada-Mu dan bukti ketaatan kami kepada sunnah Rasul-Mu.</div>
+          <div class="resepsi-judul-kata"
+            data-aos="flip-down"
+            >Ya Allah, Sempurnakanlah kebahagiaan kami dengan menjadikan perkawinan kami ini sebagai ibadah kepada-Mu dan bukti ketaatan kami kepada sunnah Rasul-Mu.</div>
         </div>
-        <div class="resepsi-tanggal">
+        <div class="resepsi-tanggal"
+          data-aos="flip-up"
+          >
           Rabu, 27 Juni 2018<span class="d-block d-md-inline"> (13 Syawal 1439 H)</span>
         </div>
-        <div class="resepsi-waktu">
+        <div class="resepsi-waktu"
+          data-aos="flip-up"
+          >
           08:00 WITA sampai Selesai
         </div>
         <div class="resepsi-info">
-          <div class="resepsi-alamat ayat">
+          <div class="resepsi-alamat ayat"
+            data-aos="fade-left"
+            >
             <div class="judul">Mempelai Pria</div>
             <div class="isi">Gang Ikhlas, Desa Ujung Murung RT 3,<br>Amuntai Selatan, Hulu Sungai Utara.</div>
           </div>
-          <div class="resepsi-alamat mawad">
+          <div class="resepsi-alamat mawad"
+            data-aos="fade-right"
+            >
             <div class="judul">Mempelai Wanita</div>
             <div class="isi">Jl. SDN Pasar Senin 1 &amp; 2 No 60, Desa Pasar Senin RT3, Amuntai Tengah, Hulu Sungai Utara.</div>
           </div>
@@ -233,8 +293,12 @@
       <div id="background" data-type="background" data-speed="-5" style="background-image: url(./assets/images/katakata-bg.png);"></div>
       <div class="container justify-content-center d-flex flex-column flex align-items-end">
         <div class="katakata-isi">
-          <div class="font-kitten text-pink font-bold atas">Beautiful Moment</div>
-          <div class="font-caveat-brush text-hitam font-bold bawah">is when i am with you</div>
+          <div class="font-kitten text-pink font-bold atas"
+            data-aos="fade-up"
+            >Beautiful Moment</div>
+          <div class="font-caveat-brush text-hitam font-bold bawah"
+            data-aos="fade-down"
+            >is when you with me</div>
         </div>
       </div>
     </section>
@@ -254,42 +318,66 @@
         </div>
         <div class="row justify-content-center" id="galeri-foto">
           <div class="col-6 col-md-4 col-lg-3">
-            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg">
+            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              >
               <img src="http://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" class="img-fluid">
             </a>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg">
+            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              >
               <img src="http://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" class="img-fluid">
             </a>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg">
+            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              >
               <img src="http://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" class="img-fluid">
             </a>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg">
+            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              >
               <img src="http://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" class="img-fluid">
             </a>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg">
+            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              >
               <img src="http://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" class="img-fluid">
             </a>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg">
+            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              >
               <img src="http://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" class="img-fluid">
             </a>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg">
+            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              >
               <img src="http://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" class="img-fluid">
             </a>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
-            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg">
+            <a class="galeri-item" href="http://sachinchoolur.github.io/lightGallery/static/img/2-1600.jpg"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              >
               <img src="http://sachinchoolur.github.io/lightGallery/static/img/thumb-1.jpg" class="img-fluid">
             </a>
           </div>
@@ -329,13 +417,12 @@
 
   <!-- Script -->
   <script src="./libs/jquery.min.js"></script>
-  <script src="./libs/popper.min.js"></script>
-  <script src="./libs/bootstrap/bootstrap.min.js"></script>
   <script src="./libs/moment/moment.min.js"></script>
   <script src="./libs/moment/id.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL_CyXzFWVA7U7cSsCFnAamkbJkmM5H8o"></script>
   <script src="https://cdn.jsdelivr.net/npm/map-icons@3.0.3/dist/js/map-icons.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/js/lightgallery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.0/aos.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 
