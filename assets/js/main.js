@@ -75,7 +75,7 @@ window.app = {
         //  Buat marker
         this.markerAyat = new Marker({
             map: this.map,
-            position: { lat: -2.4429788, lng: 115.2400099 },
+            position: { lat: -2.442974, lng: 115.239986 },
             icon: {
                 path: MAP_PIN,
                 fillColor: '#f86191',
@@ -98,15 +98,56 @@ window.app = {
             map_icon_label: '<div class="fa fa-heart mapmarker-icon"><div class="maplabel">Mempelai Wanita</div></div>'
         });
 
+        //  Window Informasi
+        this.mapInfoContent = {
+            ayat: `<div class="petalokasi-info">
+                <div class="judul">Mempelai Pria</div>
+                <div class="isi">
+                    <button type="button" class="btn btn-secondary btn-kecil mb-2" onclick="app.mapResetZoomPan()"><i class="fa fa-undo mr-3"></i>Ke Posisi Awal</button>
+                    <button type="button" class="btn btn-secondary btn-kecil mb-2" onclick="app.mapZoomPan(${ this.markerAyat.position.lat() },${ this.markerAyat.position.lng() })"><i class="fa fa-search-plus mr-3"></i>Lihat Lebih Dekat</button>
+                    <a href="https://www.google.com/maps?t=h&daddr=${ this.markerAyat.position.lat() },${ this.markerAyat.position.lng() }" target="_blank" class="btn btn-success btn-kecil"><i class="fa fa-map mr-3"></i>Buka di Google Map</a>
+                </div>
+            </div>`,
+            mawad: `<div class="petalokasi-info">
+                <div class="judul">Mempelai Wanita</div>
+                <div class="isi">
+                    <button type="button" class="btn btn-secondary btn-kecil mb-2" onclick="app.mapResetZoomPan()"><i class="fa fa-undo mr-3"></i>Ke Posisi Awal</button>
+                    <button type="button" class="btn btn-secondary btn-kecil mb-2" onclick="app.mapZoomPan(${ this.markerMawad.position.lat() },${ this.markerMawad.position.lng() })"><i class="fa fa-search-plus mr-3"></i>Lihat Lebih Dekat</button>
+                    <a href="https://www.google.com/maps?t=h&daddr=${ this.markerMawad.position.lat() },${ this.markerMawad.position.lng() }" target="_blank" class="btn btn-success btn-kecil"><i class="fa fa-map mr-3"></i>Buka di Google Map</a>
+                </div>
+            </div>`,
+        };
+        this.mapInfo = new google.maps.InfoWindow({
+            content: this.mapInfoContent.ayat
+        });
+
         //  Saat diclick
         this.markerAyat.addListener('click', () => {
-            this.map.setZoom(20);
-            window.setTimeout(() => this.map.panTo(this.markerAyat.getPosition()), 1);
+            this.mapInfo.setContent(this.mapInfoContent.ayat);
+            this.mapInfo.open(this.map, this.markerAyat);
         });
         this.markerMawad.addListener('click', () => {
-            this.map.setZoom(20);
-            window.setTimeout(() => this.map.panTo(this.markerMawad.getPosition()), 1);
+            this.mapInfo.setContent(this.mapInfoContent.mawad);
+            this.mapInfo.open(this.map, this.markerMawad);
         });
+    },
+    mapZoomPan: function (lat, lng) {
+        this.map.setZoom(20);
+        window.setTimeout(() => this.map.panTo({ lat, lng }), 1);
+        this.mapInfo.close();
+    },
+    mapResetZoomPan: function () {
+        this.map.setZoom(16);
+        window.setTimeout(() => this.map.panTo({
+            lat: -2.442686720458634, 
+            lng: 115.24281005552984
+        }), 1);
+        this.mapInfo.close();
+    },
+    initGallery: function () {
+        $("#galeri-foto").lightGallery({
+            selector: '.galeri-item'
+        }); 
     },
     init: function () {
         this.initParallax();
@@ -116,6 +157,9 @@ window.app = {
 
         //  Init Peta
         this.initMap();
+
+        //  Init Gallery
+        this.initGallery();
     },
 };
 
