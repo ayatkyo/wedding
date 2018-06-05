@@ -6,11 +6,22 @@ window.app = {
             let $bg = $(this);
             let speed = ($bg.data('speed') || 0);
             let posisiY;
+            let bgParent = $bg.parent();
 
             $window.on('scroll resize', function () {
+                //  Cek Apakah dalam screen
+                let bpTop = bgParent.offset().top;
+                let bpHeight = bgParent.outerHeight();
+                if (window.pageYOffset > (bpTop + bpHeight) || (window.pageYOffset + window.innerHeight) < bpTop) {
+                    $bg.css({ visibility: 'hidden'});
+                    return;
+                }
                 winScrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 posisiY = - ((winScrollTop - $bg.parent()[0].offsetTop) / speed);
-                $bg.css({ transform: 'translateY(' + posisiY + 'px)' });
+                $bg.css({ 
+                    visibility: 'visible',
+                    transform: 'translateY(' + posisiY + 'px)' 
+                });
             });
         });
 

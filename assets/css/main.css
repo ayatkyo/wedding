@@ -351,10 +351,10 @@ body {
 .resepsi-tanggal::before,
 .resepsi-tanggal::after {
   content: "";
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20standalone%3D%22no%22%3F%3E%3C%21--%20Generator%3A%20Gravit.io%20--%3E%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%22258.347%20291.125%2019.73%2040.763%22%20width%3D%2219.73%22%20height%3D%2240.763%22%3E%3Cpath%20d%3D%22%20M%20270.733%20323.402%20C%20271.454%20319.046%20273.588%20315.766%20275.493%20316.082%20C%20277.399%20316.397%20278.36%20320.19%20277.639%20324.546%20C%20276.917%20328.902%20274.784%20332.182%20272.878%20331.867%20C%20270.972%20331.551%20270.011%20327.758%20270.733%20323.402%20Z%20%20M%20270.981%20299.528%20C%20271.56%20303.905%20273.585%20307.253%20275.5%20307%20C%20277.415%20306.747%20278.5%20302.987%20277.921%20298.61%20C%20277.342%20294.233%20275.317%20290.885%20273.402%20291.138%20C%20271.487%20291.391%20270.403%20295.151%20270.981%20299.528%20Z%20%20M%20263.39%20314.458%20C%20267.083%20312.037%20270.941%20311.384%20272%20313%20C%20273.059%20314.616%20270.92%20317.892%20267.227%20320.312%20C%20263.534%20322.733%20259.677%20323.386%20258.618%20321.77%20C%20257.559%20320.154%20259.697%20316.878%20263.39%20314.458%20Z%20%20M%20263.39%20308.542%20C%20267.083%20310.963%20270.941%20311.616%20272%20310%20C%20273.059%20308.384%20270.92%20305.108%20267.227%20302.688%20C%20263.534%20300.267%20259.677%20299.614%20258.618%20301.23%20C%20257.559%20302.846%20259.697%20306.122%20263.39%20308.542%20Z%20%22%20fill-rule%3D%22evenodd%22%20fill%3D%22#676767%22/%3E%3C/svg%3E');
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20standalone%3D%22no%22%3F%3E%3C%21--%20Generator%3A%20Gravit.io%20--%3E%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20style%3D%22isolation%3Aisolate%22%20viewBox%3D%22258.347%20291.125%2019.73%2040.763%22%20width%3D%2219.73%22%20height%3D%2240.763%22%3E%3Cpath%20d%3D%22%20M%20270.733%20323.402%20C%20271.454%20319.046%20273.588%20315.766%20275.493%20316.082%20C%20277.399%20316.397%20278.36%20320.19%20277.639%20324.546%20C%20276.917%20328.902%20274.784%20332.182%20272.878%20331.867%20C%20270.972%20331.551%20270.011%20327.758%20270.733%20323.402%20Z%20%20M%20270.981%20299.528%20C%20271.56%20303.905%20273.585%20307.253%20275.5%20307%20C%20277.415%20306.747%20278.5%20302.987%20277.921%20298.61%20C%20277.342%20294.233%20275.317%20290.885%20273.402%20291.138%20C%20271.487%20291.391%20270.403%20295.151%20270.981%20299.528%20Z%20%20M%20263.39%20314.458%20C%20267.083%20312.037%20270.941%20311.384%20272%20313%20C%20273.059%20314.616%20270.92%20317.892%20267.227%20320.312%20C%20263.534%20322.733%20259.677%20323.386%20258.618%20321.77%20C%20257.559%20320.154%20259.697%20316.878%20263.39%20314.458%20Z%20%20M%20263.39%20308.542%20C%20267.083%20310.963%20270.941%20311.616%20272%20310%20C%20273.059%20308.384%20270.92%20305.108%20267.227%20302.688%20C%20263.534%20300.267%20259.677%20299.614%20258.618%20301.23%20C%20257.559%20302.846%20259.697%20306.122%20263.39%20308.542%20Z%20%22%20fill-rule%3D%22evenodd%22%20fill%3D%22#676767%22/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   position: absolute;
-  top: .5rem;
+  top: 0.5rem;
   width: 19.73px;
   height: 40.763px;
   left: -2.5rem;
@@ -442,10 +442,10 @@ body {
   font-size: 1.25rem;
   left: 200%;
   top: -25%;
-  text-shadow:0px -3px 5px rgba(0, 0, 0, 0.5),0px 3px 5px rgba(0, 0, 0, 0.5),3px 0px 5px rgba(0, 0, 0, 0.5),-3px 0px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px -3px 5px rgba(0, 0, 0, 0.5), 0px 3px 5px rgba(0, 0, 0, 0.5),
+    3px 0px 5px rgba(0, 0, 0, 0.5), -3px 0px 5px rgba(0, 0, 0, 0.5);
 }
 .petalokasi-info {
-
 }
 .petalokasi-info .judul {
   font-weight: bold;
@@ -457,10 +457,10 @@ body {
   flex-direction: column;
 }
 .btn-kecil {
-  padding: .25rem .5rem;
-  font-size: .75rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
   line-height: 1.5;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 /* .gm-style-pbc {
   z-index: 5 !important;
@@ -500,24 +500,31 @@ body {
   width: 40%;
 }
 .text-border {
-  text-shadow:0px -3px 5px rgba(255, 255, 255, 0.25),0px 3px 5px rgba(255, 255, 255, 0.25),3px 0px 5px rgba(255, 255, 255, 0.25),-3px 0px 5px rgba(255, 255, 255, 0.25);
+  text-shadow: 0px -3px 5px rgba(255, 255, 255, 0.25),
+    0px 3px 5px rgba(255, 255, 255, 0.25), 3px 0px 5px rgba(255, 255, 255, 0.25),
+    -3px 0px 5px rgba(255, 255, 255, 0.25);
 }
 .text-border-dark {
-  text-shadow:0px -3px 5px rgba(0, 0, 0, 0.25),0px 3px 5px rgba(0, 0, 0, 0.25),3px 0px 5px rgba(0, 0, 0, 0.25),-3px 0px 5px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px -3px 5px rgba(0, 0, 0, 0.25), 0px 3px 5px rgba(0, 0, 0, 0.25),
+    3px 0px 5px rgba(0, 0, 0, 0.25), -3px 0px 5px rgba(0, 0, 0, 0.25);
 }
 
 .katakata-isi .atas {
   color: #f86191;
-  font-size:3rem; 
-  transition: all .25s ease-out;
-  text-shadow:0px -3px 5px rgba(255, 255, 255, 0.25),0px 3px 5px rgba(255, 255, 255, 0.25),3px 0px 5px rgba(255, 255, 255, 0.25),-3px 0px 5px rgba(255, 255, 255, 0.25);
+  font-size: 3rem;
+  transition: all 0.25s ease-out;
+  text-shadow: 0px -3px 5px rgba(255, 255, 255, 0.25),
+    0px 3px 5px rgba(255, 255, 255, 0.25), 3px 0px 5px rgba(255, 255, 255, 0.25),
+    -3px 0px 5px rgba(255, 255, 255, 0.25);
 }
 
 .katakata-isi .bawah {
   color: #676767;
-  font-size:2rem; 
-  transition: all .25s ease-out;
-  text-shadow:0px -3px 5px rgba(255, 255, 255, 0.25),0px 3px 5px rgba(255, 255, 255, 0.25),3px 0px 5px rgba(255, 255, 255, 0.25),-3px 0px 5px rgba(255, 255, 255, 0.25);
+  font-size: 2rem;
+  transition: all 0.25s ease-out;
+  text-shadow: 0px -3px 5px rgba(255, 255, 255, 0.25),
+    0px 3px 5px rgba(255, 255, 255, 0.25), 3px 0px 5px rgba(255, 255, 255, 0.25),
+    -3px 0px 5px rgba(255, 255, 255, 0.25);
   margin-top: -1rem;
 }
 
@@ -543,7 +550,7 @@ body {
   background: #f86191;
   width: 100vw;
   height: 100vh;
-  transition: all .25s ease-out;
+  transition: all 0.25s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -703,22 +710,24 @@ footer .isi {
   }
   .resepsi-waktu {
     font-size: 1.15rem;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
   .katakata-isi {
     width: 100%;
     text-align: center;
   }
   .katakata-wrap::before {
-    opacity: .3;
+    opacity: 0.3;
   }
   .katakata-isi .atas {
-    font-size: 2.7rem; 
+    font-size: 2.7rem;
   }
   .katakata-isi .bawah {
     color: #f0f0f0;
-    font-size: 1.8rem; 
-    text-shadow:0px -3px 5px rgba(0, 0, 0, 0.25),0px 3px 5px rgba(0, 0, 0, 0.25),3px 0px 5px rgba(0, 0, 0, 0.25),-3px 0px 5px rgba(0, 0, 0, 0.25);
+    font-size: 1.8rem;
+    text-shadow: 0px -3px 5px rgba(0, 0, 0, 0.25),
+      0px 3px 5px rgba(0, 0, 0, 0.25), 3px 0px 5px rgba(0, 0, 0, 0.25),
+      -3px 0px 5px rgba(0, 0, 0, 0.25);
   }
 }
 /* SM down */
@@ -747,7 +756,6 @@ footer .isi {
   #galeri-foto {
     margin-top: 0;
   }
-  
 }
 /* SM up */
 @media (min-width: 576px) {
