@@ -9,7 +9,7 @@ window.app = {
 
             $window.on('scroll resize', function () {
                 winScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                posisiY = - (winScrollTop / speed);
+                posisiY = - ((winScrollTop - $bg.parent()[0].offsetTop) / speed);
                 $bg.css({ transform: 'translateY(' + posisiY + 'px)' });
             });
         });
@@ -165,3 +165,6 @@ window.app = {
 
 //  Init App
 $(document).ready(e => app.init());
+
+//  Preloader
+$(window).on('load', e => $('.preloader').addClass('hide'));
