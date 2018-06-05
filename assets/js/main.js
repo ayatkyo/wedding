@@ -179,7 +179,7 @@ AOS.init({
     easing: 'ease-out-back',
     delay: 400,
     duration: 600,
-    once: true,
+    // once: true,
     startEvent: 'mulaiAnimasi'
 });
 
