@@ -161,6 +161,9 @@ window.app = {
         }); 
     },
     loadStatistik: function () {
+        $.ajaxSetup({
+            cache: false
+        });
         $.getJSON('//protected-ravine-32778.herokuapp.com/?callback=?');
     },
     setstatistik: function (res) {
