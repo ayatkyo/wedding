@@ -326,7 +326,7 @@ section {
   font-family: "Caveat Brush";
   font-size: 1rem;
   max-width: 500px;
-  margin-top: 4rem;
+  margin-top: 2rem;
   border-top: 1px dashed rgba(0, 0, 0, 0.3);
   padding-top: 1rem;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
@@ -334,7 +334,7 @@ section {
   margin-bottom: 1rem;
 }
 .resepsi-tanggal {
-  margin-top: 2rem;
+  margin-top: 4rem;
   font-family: "Rancho";
   font-size: 2rem;
   font-weight: bold;
@@ -534,6 +534,31 @@ section {
 .galeri-item > img {
   border-radius: 5px;
 }
+/* Statistik */
+.statistik-wrap {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+.statistik-content {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.statistik-content .judul {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Kitten";
+  color: #f86191;
+}
+.statistik-content .isi {
+  font-size: 1.8rem;
+  font-family: "Caveat Brush";
+  font-weight: bold;
+  margin-top: -0.5rem;
+}
 .preloader {
   position: fixed;
   z-index: 2815;
@@ -681,22 +706,22 @@ footer .isi {
   }
   .resepsi-judul-kata {
     max-width: 85% !important;
-    margin-top: 1rem !important;
+    margin-top: 2rem !important;
   }
   .resepsi-tanggal {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   .resepsi-tanggal::before,
   .resepsi-tanggal::after {
     top: 50%;
   }
   .resepsi-info {
-    margin-top: 2rem;
+    margin-top: 0rem;
     margin-bottom: 0rem;
     max-width: 85%;
-    padding-top: 2rem;
+    padding-top: 1rem;
     flex-direction: column;
-    border-top: 1px dashed rgba(0, 0, 0, 0.3);
+    /* border-top: 1px dashed rgba(0, 0, 0, 0.3); */
   }
   .resepsi-alamat {
     padding: 0 !important;
@@ -730,6 +755,12 @@ footer .isi {
       0px 3px 5px rgba(0, 0, 0, 0.25), 3px 0px 5px rgba(0, 0, 0, 0.25),
       -3px 0px 5px rgba(0, 0, 0, 0.25);
   }
+  .statistik-content .judul {
+    font-size: 1.5rem;
+  }
+  .statistik-content .isi {
+    font-size: 1rem;
+  }
 }
 /* SM down */
 @media (max-width: 576px) {
@@ -756,6 +787,16 @@ footer .isi {
   }
   #galeri-foto {
     margin-top: 0;
+  }
+  .statistik-wrap {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .statistik-wrap .judul-section {
+    margin-bottom: 1rem;
+  }
+  .statistik-content {
+    flex-direction: column;
   }
 }
 /* SM up */

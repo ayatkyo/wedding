@@ -160,6 +160,17 @@ window.app = {
             selector: '.galeri-item'
         }); 
     },
+    loadStatistik: function () {
+        $.getJSON('//protected-ravine-32778.herokuapp.com/?callback=?');
+    },
+    setstatistik: function (res) {
+        console.log(res);
+        let scPengunjung = document.getElementById('scPengunjung');
+        let scAkses = document.getElementById('scAkses');
+
+        scPengunjung.innerHTML = (res.data.users && res.data.users > 0) ? res.data.users + " Pengunjung" : "";
+        scAkses.innerHTML = (res.data.pageviews && res.data.pageviews > 0) ? res.data.pageviews + " Kali Akses" : "";
+    },
     init: function () {
         this.initParallax();
 
@@ -171,6 +182,8 @@ window.app = {
 
         //  Init Gallery
         this.initGallery();
+
+        this.loadStatistik();
     },
 };
 
